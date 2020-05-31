@@ -1,0 +1,12 @@
+{
+    "name": "Seeed ArduPy si114x ",
+    "version": "1.0.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Seeed-Studio/seeed-ardupy-si114x.git"
+    },
+    "dependencies": [{
+        "name": "Seeed_Arduino_TFlidar",
+        "url": "https://github.com/Seeed-Studio/Grove_Sunlight_Sensor.git"
+    }]
+}
