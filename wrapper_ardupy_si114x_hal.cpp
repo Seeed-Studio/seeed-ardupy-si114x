@@ -40,9 +40,7 @@ void * operator new(size_t, void *);
 
 extern "C"{
     void common_hal_si114x_construct(abstract_module_t * self){
-        self->module = new(m_new_obj(si114x)) SI114X();
-        si114x.WriteByte(SI114X_COMMAND, SI114X_RESET);
-        delay(100);
+        self->module = new(m_new_obj(SI114X)) SI114X();
         si114x.Begin();
     }
     void common_hal_si114x_deinit(abstract_module_t * self){

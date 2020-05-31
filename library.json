@@ -6,7 +6,7 @@
         "url": "https://github.com/Seeed-Studio/seeed-ardupy-si114x.git"
     },
     "dependencies": [{
-        "name": "Seeed_Arduino_TFlidar",
+        "name": "Grove_Sunlight_Sensor",
         "url": "https://github.com/Seeed-Studio/Grove_Sunlight_Sensor.git"
     }]
 }
