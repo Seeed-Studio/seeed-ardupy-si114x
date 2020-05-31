@@ -29,6 +29,38 @@ For more examples of using AIP, please refer to [AIP](https://github.com/Seeed-S
 
 ## Usage
 
+```python
+from arduino import grove_si114x
+import time
+
+SI1145 = grove_si114x()
+
+while True:
+    print('Visible %03d UV %.2f IR %03d' % (SI1145.Visible , SI1145.UV/100 , SI1145.IR),end=" ")
+    print('\r', end='')
+    time.sleep(0.5)
+
+```
+
+## API Reference
+
+- uint16_t Visible(void): return visible light of Ambient.
+
+```python
+    print("Visible %03d" % SI1145.Visible)
+```
+
+- uint16_t UV(void): return Ultraviolet (UV) Index.
+
+```python
+    print("UV %.2f" % SI1145.UV / 100)
+```
+
+- uint16_t IR(void): return infrared light of Ambient.
+
+```python
+    print("IR %03d" % SI1145.IR)
+```
 
 ----
 
